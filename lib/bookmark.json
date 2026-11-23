@@ -1,0 +1,46 @@
+{
+	"官网": {
+		"node": {
+			"url": "https://www.nodejs.org",
+			"description": "Node.js 官网"
+		},
+		"mysql2": {
+			"url": "https://sidorares.github.io/node-mysql2/zh-CN/docs",
+			"description": "mysql2 中文文档"
+		},
+		"ts": {
+			"url": "https://www.typescriptlang.org",
+			"description": "TypeScript 官网"
+		},
+		"github": {
+			"url": "https://github.com",
+			"description": "GitHub 官网"
+		},
+		"doubao": {
+			"url": "https://www.doubao.com",
+			"description": "豆包 官网"
+		}
+	},
+	"插件": {
+		"jwt": {
+			"url": "https://www.npmjs.com/package/jsonwebtoken",
+			"description": "用于生成和校验JWT令牌，常用于后端登录鉴权"
+		},
+		"download-git-repo": {
+			"url": "https://www.npmjs.com/package/download-git-repo",
+			"description": "用于命令行下载Git仓库代码，常用来做脚手架拉取模板项目"
+		},
+		"inquirer": {
+			"url": "https://www.npmjs.com/package/inquirer",
+			"description": "Node命令行交互工具，脚手架项目用来收集用户配置选项"
+		},
+		"npmlog": {
+			"url": "https://www.npmjs.com/package/npmlog",
+			"description": "npm官方日志模块，用于脚手架、命令行工具统一管理日志打印"
+		},
+		"semver": {
+			"url": "https://www.npmjs.com/package/semver",
+			"description": "用于比较和验证版本号，常用来校验NodeJS版本是否符合要求"
+		}
+	}
+}
