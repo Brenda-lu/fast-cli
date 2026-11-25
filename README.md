@@ -7,9 +7,17 @@
 ```json
 {
 	"bin": {
-		"fast": "./index.js"
+		"kick": "./index.js"
 	}
 }
 ```
 
 4. npm link 把本地开发的包软链接到全局 npm 目录里
+
+# 脚手架发布项目
+
+1. 登录npm `https://www.npmjs.com/`
+2. npm login
+3. 修改package.json 的 `keywords` `author` `license="MIT"` `homepage` `repository`
+4. 修改版本号
+5. npm publish
