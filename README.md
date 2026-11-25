@@ -1,9 +1,9 @@
-# fast-cli 使用手册
+# kick-cli 使用手册
 
-`fast-cli` 是一个基于 commander + ESM 的自研脚手架工具，提供两个命令：
+`kick-cli` 是一个基于 commander + ESM 的自研脚手架工具，提供两个命令：
 
-- `fast c`：根据模板创建项目（拉取模板 → 改项目名 → 生成密钥 → 写环境变量 → 装依赖 → 启动）
-- `fast o`：打开常用链接（官网 / 插件文档），支持远端同步书签
+- `kick c`：根据模板创建项目（拉取模板 → 改项目名 → 生成密钥 → 写环境变量 → 装依赖 → 启动）
+- `kick o`：打开常用链接（官网 / 插件文档），支持远端同步书签
 
 ## 环境要求
 
@@ -17,19 +17,19 @@
 npm link
 ```
 
-之后即可在任意目录使用 `fast` 命令。发布到 npm 后，也可用 `npm i -g fast-cli` 全局安装。
+之后即可在任意目录使用 `kick` 命令。发布到 npm 后，也可用 `npm i -g kick-cli` 全局安装。
 
 ## 命令总览
 
 ```bash
-fast c <template-name>     # 创建模板项目
-fast o <url-name>          # 打开官方链接，可加 --refresh 同步书签
+kick c <template-name>     # 创建模板项目
+kick o <url-name>          # 打开官方链接，可加 --refresh 同步书签
 ```
 
-## fast c —— 创建项目
+## kick c —— 创建项目
 
 ```bash
-fast c koa
+kick c koa
 ```
 
 ### 交互流程
@@ -62,12 +62,12 @@ fast c koa
 | `MYSQL_PASSWORD` | MySQL 密码                 | 必填，留空会提示   |
 | `MYSQL_DATABASE` | MySQL 数据库名             | 默认取项目名       |
 
-## fast o —— 打开链接
+## kick o —— 打开链接
 
 ```bash
-fast o node                 # 打开 Node.js 官网
-fast o jwt                  # 打开 jsonwebtoken 文档
-fast o --help               # 查看帮助
+kick o node                 # 打开 Node.js 官网
+kick o jwt                  # 打开 jsonwebtoken 文档
+kick o --help               # 查看帮助
 ```
 
 ### 选项
@@ -87,9 +87,9 @@ fast o --help               # 查看帮助
 
 ### 书签数据来源（三级回退）
 
-`fast o` 不直接内置写死书签，而是按以下顺序取数据：
+`kick o` 不直接内置写死书签，而是按以下顺序取数据：
 
-1. 本地缓存 `~/.fast-cli/bookmark.json`（首次 `--refresh` 后生成）
+1. 本地缓存 `~/.kick-cli/bookmark.json`（首次 `--refresh` 后生成）
 2. 内置兜底 `lib/bookmark.json`（发布包自带的离线快照）
 3. `--refresh` 时从远端仓库拉取最新书签并写入缓存
 
